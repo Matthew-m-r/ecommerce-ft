@@ -1,0 +1,24 @@
+@import "../../utils/styles/variables.scss";
+
+.main-title-container {
+    color: $secondary-blue;
+    transition: color 0.32s ease-in-out;
+
+    @media (max-width: $mobileL) {
+        .mobile {
+            display: flex !important;
+        }
+        .desktop {
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: $main-orange;
+        cursor: pointer;
+    }
+
+    > .mobile {
+        display: none;
+    }
+}
