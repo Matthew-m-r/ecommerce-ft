@@ -1,0 +1,44 @@
+@import "../../utils/styles/variables.scss";
+
+.main-item-container {
+    align-items: center;
+    border: 1px solid $card-border;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    transition: all ease-in-out 0.32s;
+    width: calc(100% / 5);
+
+    .product-image {
+        align-items: center;
+        background-color: $card-border;
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            height: 85%;
+            max-width: 85%;
+        }
+    }
+
+    .product-description {
+        min-height: 50%;
+        padding: 0.5rem 1rem;
+        width: 90%;
+
+        h6 {
+            margin: 0;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+}

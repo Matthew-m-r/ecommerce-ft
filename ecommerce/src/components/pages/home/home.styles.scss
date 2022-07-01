@@ -1,0 +1,24 @@
+@import "../../../utils/styles/variables.scss";
+
+.main-home-container {
+    height: 100%;
+    margin: auto;
+    width: 85%;
+
+    .filter-section {
+        border-top: 1px solid $card-border;
+        border-bottom: 1px solid $card-border;
+        display: flex;
+        height: 4%;
+        justify-content: flex-end;
+        width: 100%;
+
+        p {
+            font-style: italic;
+        }
+    }
+
+    .item-list {
+        margin: 2rem 0;
+    }
+}

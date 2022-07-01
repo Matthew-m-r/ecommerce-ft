@@ -1,0 +1,13 @@
+.main-loader-container {
+    display: grid;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    place-items: center;
+    top: 0;
+    width: 100%;
+
+    img {
+        width: 10%;
+    }
+}

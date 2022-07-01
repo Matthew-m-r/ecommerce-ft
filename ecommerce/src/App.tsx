@@ -1,12 +1,13 @@
-import ItemListContainer from "@components/pages/item-list-container/itemListContainer.component";
-import Navbar from "@components/navbar/navbar.component";
+import MainLayout from "@components/layouts/main-layout/mainLayout.component";
+import Home from "@components/pages/home/home.component";
 import "./App.scss";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <ItemListContainer />
+      <MainLayout>
+        <Home />
+      </MainLayout>
     </div>
   );
 }
