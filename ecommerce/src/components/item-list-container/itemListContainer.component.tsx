@@ -11,7 +11,6 @@ const ItemListContainer = () => {
   useEffect(() => {
     (async () => {
       const response: IProduct[] = await getProducts;
-      console.log(typeof response);
       setProducts(response);
     })();
   }, []);
