@@ -1,16 +1,14 @@
 import Navbar from "@components/navbar/navbar.component";
-import React from "react";
+import { Outlet } from "react-router-dom";
 import "./mainLayout.styles.scss";
 
-interface MainLayoutProps {
-  children: React.ReactNode;
-}
-
-const MainLayout = ({ children }: MainLayoutProps) => {
+const MainLayout = () => {
   return (
     <div className="main-layout-container">
       <Navbar />
-      <div className="children-container">{children}</div>
+      <div className="children-container">
+        <Outlet />
+      </div>
     </div>
   );
 };
