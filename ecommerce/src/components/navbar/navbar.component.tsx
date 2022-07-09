@@ -8,14 +8,14 @@ const Navbar = () => {
       <CartWidget />
       <div className="navbar">
         <div className="left-side">
-          <NavLink to="/">Inicio</NavLink>
-          <NavLink to="/">Series TV</NavLink>
-          <NavLink to="/">Películas</NavLink>
-          <NavLink to="/">Novedades más vistas</NavLink>
-          <NavLink to="/">Mi lista</NavLink>
+          <NavLink to="/home" className="nav-link">Ofertas del día</NavLink>
+          <NavLink to="/" className="nav-link">Tecnología</NavLink>
+          <NavLink to="/" className="nav-link">Deporte</NavLink>
+          <NavLink to="/" className="nav-link">Series</NavLink>
+          <NavLink to="/" className="nav-link">Mascotas</NavLink>
         </div>
         <div className="right-side">
-          <p>Login</p>
+          <NavLink to="/home" className="nav-link">Login</NavLink>
         </div>
       </div>
     </div>

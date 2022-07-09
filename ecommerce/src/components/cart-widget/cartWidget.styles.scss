@@ -1,8 +1,15 @@
 .brand-logo {
     align-items: center;
+    border: 1px solid transparent;
     cursor: pointer;
     display: flex;
     margin: 0 2rem;
+    padding: 0.4rem;
+
+    &:hover {
+        border: 1px solid white;
+        cursor: pointer;
+    }
 
     > img {
         max-width: 5rem;

@@ -1,45 +1,47 @@
 @import "../../utils/styles/variables.scss";
 
 .main-navbar-container {
+  align-items: center;
+  background-color: $secondary-blue;
+  display: flex;
+  height: 3rem;
+  width: 100%;
+
+  @media (max-width: $mobileL) {
+    .navbar {
+      justify-content: flex-end !important;
+
+      .left-side {
+        display: none !important;
+      }
+      .right-side {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  > .navbar {
     align-items: center;
-    background-color: $secondary-blue;
+    color: white;
     display: flex;
-    height: 3rem;
+    font-weight: 500;
+    justify-content: space-between;
+    margin: 0 2rem;
     width: 100%;
+    
+    .nav-link {
+      border: 1px solid transparent;
+      color: white !important;
+      padding: 0.2rem 1rem;
+      text-decoration: none;
 
-    @media (max-width: $mobileL) {
-        .navbar {
-            justify-content: flex-end !important;
-
-            .left-side {
-                display: none !important;
-            }
-            .right-side {
-                align-self: flex-end;
-            }
-        }
+      &:hover {
+        border: 1px solid white;
+        cursor: pointer;
+      }
     }
-
-    > .navbar {
-        align-items: center;
-        color: white;
-        display: flex;
-        font-weight: 500;
-        justify-content: space-between;
-        margin: 0 2rem;
-        width: 100%;
-
-        p {
-            border: 1px solid transparent;
-            padding: 0.2rem 1rem;
-            &:hover {
-                border: 1px solid white;
-                cursor: pointer;
-            }
-        }
-
-        .left-side {
-            display: flex;
-        }
+    .left-side {
+      display: flex;
     }
+  }
 }
