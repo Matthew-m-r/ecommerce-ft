@@ -9,6 +9,7 @@ export const products: IProduct[] = [
     price: 31,
     pictureUrl:
       "https://m.media-amazon.com/images/I/51Kk8hvrxuL._AC_UL320_.jpg",
+    categoryId: 2,
   },
   {
     id: 1,
@@ -19,6 +20,7 @@ export const products: IProduct[] = [
     price: 1000,
     pictureUrl:
       "https://m.media-amazon.com/images/I/71TPda7cwUL._AC_UY218_.jpg",
+    categoryId: 1,
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ export const products: IProduct[] = [
     price: 18.99,
     pictureUrl:
       "https://m.media-amazon.com/images/I/51YZhjl3QgL._AC_UL320_.jpg",
+    categoryId: 2,
   },
   {
     id: 3,
@@ -38,6 +41,7 @@ export const products: IProduct[] = [
     price: 31,
     pictureUrl:
       "https://m.media-amazon.com/images/I/81LMoIJMHIL._AC_UL320_.jpg",
+    categoryId: 3,
   },
   {
     id: 4,
@@ -48,6 +52,7 @@ export const products: IProduct[] = [
     price: 42.99,
     pictureUrl:
       "https://m.media-amazon.com/images/I/61XEPyYofLL._AC_UL320_.jpg",
+    categoryId: 4,
   },
   {
     id: 5,
@@ -57,6 +62,7 @@ export const products: IProduct[] = [
     price: 329,
     pictureUrl:
       "https://m.media-amazon.com/images/I/71K6Yha8coL._AC_UL320_.jpg",
+    categoryId: 2,
   },
   {
     id: 6,
@@ -66,6 +72,7 @@ export const products: IProduct[] = [
     price: 35.95,
     pictureUrl:
       "https://m.media-amazon.com/images/I/51pWeLk8BvL._AC_UL320_.jpg",
+    categoryId: 3,
   },
   {
     id: 7,
@@ -76,5 +83,6 @@ export const products: IProduct[] = [
     price: 1.1,
     pictureUrl:
       "https://m.media-amazon.com/images/I/61-TMUCSYPL._AC_UY218_.jpg",
+    categoryId: 2,
   },
 ];
