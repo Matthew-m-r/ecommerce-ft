@@ -1,19 +1,33 @@
 import Item from "@components/item/item.component";
 import Loader from "@components/loader/loader.component";
 import { IProduct } from "@interfaces/product/product.interface";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getProducts } from "../../utils/services/product";
 import "./itemListContainer.styles.scss";
 
-const ItemListContainer = () => {
+interface ItemListContainerProps {
+  categoryId?: string;
+}
+
+const ItemListContainer = ({ categoryId }: ItemListContainerProps) => {
   const [products, setProducts] = useState<IProduct[]>([]);
 
   useEffect(() => {
+    console.log("categoryId ->  ", categoryId);
+
     (async () => {
       const response: IProduct[] = await getProducts;
-      setProducts(response);
+      if (categoryId) {
+        setProducts(
+          response.filter(
+            (cat: IProduct) => cat.categoryId === parseInt(categoryId)
+          )
+        );
+      } else {
+        setProducts(response);
+      }
     })();
-  }, []);
+  }, [categoryId]);
 
   return (
     <div className="main-item-list-container">

@@ -9,12 +9,13 @@
         border-top: 1px solid $card-border;
         border-bottom: 1px solid $card-border;
         display: flex;
-        height: 4%;
+        // height: 4%;
         justify-content: flex-end;
         width: 100%;
 
         p {
             font-style: italic;
+            margin: 0.5rem;
         }
     }
 

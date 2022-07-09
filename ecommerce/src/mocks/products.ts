@@ -5,11 +5,13 @@ export const products: IProduct[] = [
     id: 0,
     title:
       "Royal Bobbles Better Call Saul Hector Salamanca Bobblehead con campana de trabajo, figura realista de poliresina premium, número de serie único, detalle exquisito",
-    description: "",
+    description:
+      "Royal Bobbles Better Call Saul Hector Salamanca Bobblehead con campana de trabajo, figura realista de poliresina premium, número de serie único, detalle exquisito",
     price: 31,
     pictureUrl:
       "https://m.media-amazon.com/images/I/51Kk8hvrxuL._AC_UL320_.jpg",
-    categoryId: 2,
+    categoryId: 3,
+    available: 1,
   },
   {
     id: 1,
@@ -21,16 +23,19 @@ export const products: IProduct[] = [
     pictureUrl:
       "https://m.media-amazon.com/images/I/71TPda7cwUL._AC_UY218_.jpg",
     categoryId: 1,
+    available: 1,
   },
   {
     id: 2,
-    title: "Shirt",
+    title:
+      "Breaking Bad Los Pollos Hermanos - Camiseta con logotipo de retrato de espalda a espalda, Negro, S",
     description:
       "Agaoece Better Call Saul Graphic - Camiseta para hombre Breaking Bad Los Pollos Hermanos",
     price: 18.99,
     pictureUrl:
       "https://m.media-amazon.com/images/I/51YZhjl3QgL._AC_UL320_.jpg",
-    categoryId: 2,
+    categoryId: 3,
+    available: 1,
   },
   {
     id: 3,
@@ -41,7 +46,8 @@ export const products: IProduct[] = [
     price: 31,
     pictureUrl:
       "https://m.media-amazon.com/images/I/81LMoIJMHIL._AC_UL320_.jpg",
-    categoryId: 3,
+    categoryId: 2,
+    available: 1,
   },
   {
     id: 4,
@@ -53,6 +59,7 @@ export const products: IProduct[] = [
     pictureUrl:
       "https://m.media-amazon.com/images/I/61XEPyYofLL._AC_UL320_.jpg",
     categoryId: 4,
+    available: 1,
   },
   {
     id: 5,
@@ -63,6 +70,7 @@ export const products: IProduct[] = [
     pictureUrl:
       "https://m.media-amazon.com/images/I/71K6Yha8coL._AC_UL320_.jpg",
     categoryId: 2,
+    available: 1,
   },
   {
     id: 6,
@@ -73,6 +81,7 @@ export const products: IProduct[] = [
     pictureUrl:
       "https://m.media-amazon.com/images/I/51pWeLk8BvL._AC_UL320_.jpg",
     categoryId: 3,
+    available: 1,
   },
   {
     id: 7,
@@ -83,6 +92,7 @@ export const products: IProduct[] = [
     price: 1.1,
     pictureUrl:
       "https://m.media-amazon.com/images/I/61-TMUCSYPL._AC_UY218_.jpg",
-    categoryId: 2,
+    categoryId: 1,
+    available: 1,
   },
 ];

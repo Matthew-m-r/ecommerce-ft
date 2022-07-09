@@ -1,4 +1,5 @@
 import { IProduct } from "@interfaces/product/product.interface";
+import { useNavigate } from "react-router-dom";
 import "./item.styles.scss";
 
 interface ItemProps {
@@ -8,9 +9,13 @@ interface ItemProps {
 const Item = ({ product }: ItemProps) => {
   const options = { style: "currency", currency: "USD" };
   const priceFormat = new Intl.NumberFormat("en-US", options);
+  const navigate = useNavigate();
 
   return (
-    <div className="main-item-container">
+    <div
+      className="main-item-container"
+      onClick={() => navigate(`/item/${product.id}`)}
+    >
       <div className="product-image">
         <img src={product.pictureUrl} />
       </div>

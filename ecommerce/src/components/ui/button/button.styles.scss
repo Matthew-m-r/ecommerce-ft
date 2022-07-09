@@ -1,0 +1,29 @@
+@import "../../../utils/styles/variables.scss";
+
+.main-button-container {
+    border-radius: $button-border-radius;
+    display: grid;
+    height: 30px;
+    place-items: center;
+    transition: all 0.32s ease-in-out;
+    width: 100%;
+
+    p {
+        color: $green;
+        font-size: 0.7rem;
+        margin: auto;
+    }
+
+    &:hover {
+        box-shadow: 0 0.1em 0.2em 0 rgb(77, 77, 77);
+        cursor: pointer;
+    }
+}
+
+.yellow {
+    background-color: $yellow-button;
+}
+
+.orange {
+    background-color: $orange-button;
+}

@@ -1,0 +1,76 @@
+@import "../../utils/styles/variables.scss";
+
+.main-product-detail-container {
+    box-shadow: 0 1em 0.7rem -5px #ededed;
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 0 0 0 1rem;
+    width: 90%;
+
+    .product-preview-container {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+
+        .product-preview {
+            .product-image-container {
+                display: grid;
+                place-items: center;
+
+                img {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+    .product-details-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        width: 35%;
+
+        .product-title-container {
+            border-top: 1px solid $card-border;
+
+            .product-long-description {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .cart-details-container {
+        border: 1px solid $card-border;
+        border-radius: $big-cards-radius;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        padding: 0.5rem 1rem;
+        width: 15%;
+
+        > p {
+            margin: 0;
+        }
+
+        > .shipping-details-container {
+            font-size: 0.7rem !important;
+            margin: 0.5rem 0;
+        }
+
+        .available {
+            color: $green;
+        }
+
+        .unavailable {
+            color: $red;
+        }
+
+        .buttons-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 1rem 0 !important;
+        }
+    }
+}

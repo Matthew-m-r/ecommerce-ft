@@ -23,6 +23,7 @@
       "@interfaces/*": ["src/interfaces/*"],
       "@mocks/*": ["src/mocks/*"],
       "@pages/*": ["src/pages/*"],
+      "@utils/*": ["src/utils/*"],
     }
   },
   "include": ["src"],
