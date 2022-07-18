@@ -20,6 +20,7 @@
     "paths": {
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
+      "@context/*": ["src/context/*"],
       "@interfaces/*": ["src/interfaces/*"],
       "@mocks/*": ["src/mocks/*"],
       "@pages/*": ["src/pages/*"],

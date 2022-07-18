@@ -13,8 +13,6 @@ const ItemListContainer = ({ categoryId }: ItemListContainerProps) => {
   const [products, setProducts] = useState<IProduct[]>([]);
 
   useEffect(() => {
-    console.log("categoryId ->  ", categoryId);
-
     (async () => {
       const response: IProduct[] = await getProducts;
       if (categoryId) {

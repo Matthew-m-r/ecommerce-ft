@@ -12,6 +12,7 @@ export const products: IProduct[] = [
       "https://m.media-amazon.com/images/I/51Kk8hvrxuL._AC_UL320_.jpg",
     categoryId: 3,
     available: 1,
+    stock: 3,
   },
   {
     id: 1,
@@ -24,6 +25,7 @@ export const products: IProduct[] = [
       "https://m.media-amazon.com/images/I/71TPda7cwUL._AC_UY218_.jpg",
     categoryId: 1,
     available: 1,
+    stock: 5,
   },
   {
     id: 2,
@@ -36,6 +38,7 @@ export const products: IProduct[] = [
       "https://m.media-amazon.com/images/I/51YZhjl3QgL._AC_UL320_.jpg",
     categoryId: 3,
     available: 1,
+    stock: 4,
   },
   {
     id: 3,
@@ -48,6 +51,7 @@ export const products: IProduct[] = [
       "https://m.media-amazon.com/images/I/81LMoIJMHIL._AC_UL320_.jpg",
     categoryId: 2,
     available: 1,
+    stock: 6,
   },
   {
     id: 4,
@@ -60,6 +64,7 @@ export const products: IProduct[] = [
       "https://m.media-amazon.com/images/I/61XEPyYofLL._AC_UL320_.jpg",
     categoryId: 4,
     available: 1,
+    stock: 7,
   },
   {
     id: 5,
@@ -71,6 +76,7 @@ export const products: IProduct[] = [
       "https://m.media-amazon.com/images/I/71K6Yha8coL._AC_UL320_.jpg",
     categoryId: 2,
     available: 1,
+    stock: 5,
   },
   {
     id: 6,
@@ -82,6 +88,7 @@ export const products: IProduct[] = [
       "https://m.media-amazon.com/images/I/51pWeLk8BvL._AC_UL320_.jpg",
     categoryId: 3,
     available: 1,
+    stock: 4,
   },
   {
     id: 7,
@@ -89,10 +96,11 @@ export const products: IProduct[] = [
       "MSI Katana GF66 15.6 144Hz 3ms FHD Gaming Laptop Intel Core i7-11800H RTX3050TI 16GB 1TBNVMe SSD Win10",
     description:
       "FHD de 15.6, nivel IPS 144Hz 45%NTSC, 1920x1080 16:9 Core i7-11800H 8 Core, GPU para portátil NVIDIA GeForce RTX3050 TI, 4G GDDR6, price: 31,",
-    price: 1.1,
+    price: 1100,
     pictureUrl:
       "https://m.media-amazon.com/images/I/61-TMUCSYPL._AC_UY218_.jpg",
     categoryId: 1,
     available: 1,
+    stock: 3,
   },
 ];

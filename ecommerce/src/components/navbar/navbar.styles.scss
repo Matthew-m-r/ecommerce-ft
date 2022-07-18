@@ -41,6 +41,14 @@
         cursor: pointer;
       }
     }
+
+    .cart-link {
+      border: 1px solid transparent;
+      color: white !important;
+      padding: 0.2rem 1rem;
+      text-decoration: none;
+    }
+
     .left-side {
       display: flex;
     }

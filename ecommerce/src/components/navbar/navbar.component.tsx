@@ -1,4 +1,5 @@
 import CartWidget from "@components/cart-widget/cartWidget.component";
+import Cart from "@components/cart/cart.component";
 import { NavLink } from "react-router-dom";
 import "./navbar.styles.scss";
 
@@ -25,8 +26,8 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="right-side">
-          <NavLink to="/home" className="nav-link">
-            Login
+          <NavLink to="/cart" className="cart-link">
+            <Cart />
           </NavLink>
         </div>
       </div>

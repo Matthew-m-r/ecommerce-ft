@@ -6,10 +6,6 @@ import "./home.styles.scss";
 const Home = () => {
   const { categoryId } = useParams();
 
-  useEffect(() => {
-    console.log("ID  >>>> ", categoryId);
-  }, []);
-
   return (
     <div className="main-home-container">
       <div className="filter-section">

@@ -1,0 +1,24 @@
+@import "../../utils/styles/variables.scss";
+
+.cart-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    position: relative;
+
+    > h4 {
+        color: $main-orange;
+        left: 45%;
+        margin: 0 !important;
+        position: absolute;
+        top: 0;
+    }
+
+    > img {
+        bottom: 0 !important;
+        filter: brightness(1);
+        height: 40px;
+        left: 0;
+        width: 40px;
+    }
+}
