@@ -33,7 +33,6 @@ const CartList = () => {
   const removeProduct = (productId: number) => {
     const index = getIndex(productId);
     cartProducts.splice(index, 0);
-    console.log("cartProducts ->>>>  ", cartProducts, "  index  ", index);
     setCartProducts([...cartProducts]);
     removeCartProduct(productId);
   };
