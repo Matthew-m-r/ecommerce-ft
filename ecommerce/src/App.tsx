@@ -1,13 +1,13 @@
 import React from "react";
-import "./App.scss";
 import AppRouter from "./router/router";
+import "./App.scss";
 
 function App() {
   return (
     <div className="app">
-      <React.StrictMode>
+      {/* <React.StrictMode> */}
         <AppRouter />
-      </React.StrictMode>
+      {/* </React.StrictMode> */}
     </div>
   );
 }

@@ -18,9 +18,11 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
+      "@axios/*": ["src/axios/*"],
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
       "@context/*": ["src/context/*"],
+      "@config/*": ["src/config/*"],
       "@interfaces/*": ["src/interfaces/*"],
       "@mocks/*": ["src/mocks/*"],
       "@pages/*": ["src/pages/*"],
