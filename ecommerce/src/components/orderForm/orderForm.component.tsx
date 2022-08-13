@@ -25,10 +25,6 @@ const OrderForm = ({ showForm }: OrderFormProps) => {
   const cartContext = useCart();
   const navigate = useNavigate();
 
-  const CreateOrder = () => {
-    createOrder(cartContext, setOrderCode);
-  };
-
   const HandleReturnHome = () => {
     setOrderCode("");
     navigate("/");
@@ -45,7 +41,7 @@ const OrderForm = ({ showForm }: OrderFormProps) => {
       });
     }
 
-    CreateOrder();
+    createOrder(cartContext, setOrderCode, form);
   };
 
   const OnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -100,7 +96,7 @@ const OrderForm = ({ showForm }: OrderFormProps) => {
 
       <div className="order-tracking-code">
         <p>¡Hemos recibido tu orden de compra con éxito!</p>
-        <p>El código de seguimiento de tu orden es: {orderCode}</p>
+        <p>El código de seguimiento de tu orden es: <strong>{orderCode}</strong></p>
         <CustomButton
           text="Seguir comprando"
           buttonStyle="yellow"

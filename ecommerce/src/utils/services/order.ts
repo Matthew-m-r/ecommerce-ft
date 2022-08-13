@@ -4,27 +4,27 @@ import { db } from "../../../src/firebase/firebase";
 
 import {
   addDoc,
-  collection, documentId,
-  getDocs, query, where,
-  writeBatch
+  collection,
+  documentId,
+  getDocs,
+  query,
+  where,
+  writeBatch,
 } from "firebase/firestore";
 import { Dispatch, SetStateAction } from "react";
 import { getTotalCharge } from "./cart";
+import { IForm } from "@interfaces/form/form.interface";
 
 export const createOrder = async (
   cartContext: any,
-  setOrderCode: Dispatch<SetStateAction<string>>
+  setOrderCode: Dispatch<SetStateAction<string>>,
+  form: IForm
 ) => {
   const cartData = cartContext.cartData;
   let orderCreated: string = "";
 
   const order: IOrder = orderInitialState;
-  order.buyer = {
-    name: "Mateo",
-    email: "matemoncada@bemaster.com",
-    phone: "563137695588",
-    address: "CL 53 #74, Medellin",
-  };
+  order.buyer = { ...form };
   order.products = cartData.map((prod: ICart, i: number) => {
     const id = prod.product.id;
     return id;
