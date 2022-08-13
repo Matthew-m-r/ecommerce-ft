@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Matthew-m-r/ecommerce-ft)
 
->The Amazon Clone is an Ecommerce project, powered by CoderHouse's ReactJs course and built by [Mateo Moncada Roldán.][mmr]
+>The Amazon Clone is an Ecommerce project, powered by CoderHouse's ReactJs course and built by [Mateo Moncada Roldán][mmr]
 
 - Amazon.com as main reference
 - Don't forget to take a look of the 404 component, you'll find out some ✨Magic ✨
@@ -80,3 +80,4 @@ _Mateo Moncada Roldan, Software Engineer._
    [react-router-dom]: <https://yarnpkg.com/package/react-router-dom>
    [react-icons]: <https://react-icons.github.io/react-icons/>
    [Amazon Clone]: <https://62f7e5b16ae19351ccf6e850--bright-parfait-9851e9.netlify.app/>
+   [mmr]: <https://github.com/Matthew-m-r/>
