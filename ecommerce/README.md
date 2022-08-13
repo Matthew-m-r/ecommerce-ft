@@ -79,5 +79,5 @@ _Mateo Moncada Roldan, Software Engineer._
    [firebase]: <https://www.typescriptlang.org/>
    [react-router-dom]: <https://yarnpkg.com/package/react-router-dom>
    [react-icons]: <https://react-icons.github.io/react-icons/>
-   [Amazon Clone]: <https://62f7e5b16ae19351ccf6e850--bright-parfait-9851e9.netlify.app/>
+   [Amazon Clone]: <https://62f829976822617b7688c3f1--bright-parfait-9851e9.netlify.app/>
    [mmr]: <https://github.com/Matthew-m-r/>
