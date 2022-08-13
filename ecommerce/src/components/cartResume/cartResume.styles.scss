@@ -1,0 +1,38 @@
+@import "../../utils/styles/variables.scss";
+
+.cart-resume-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+    .shipping-details-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        
+        svg {
+            color: $green;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+        
+        p {
+            color: $green;
+            width: 90%;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .subtotal-section {
+        align-items: left;
+        display: flex;
+
+        > .subtotal-cart-items-container {
+            margin: 0; 
+        }
+    }
+}

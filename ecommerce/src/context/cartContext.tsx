@@ -1,10 +1,13 @@
 import { ICart } from "@interfaces/cart/cart.interface";
-import { IProduct } from "@interfaces/product/product.interface";
 import React, { Context, createContext, useContext, useState } from "react";
+import { orderInitialState } from "@interfaces/order/order.interface";
+
+import { IOrder } from "@interfaces/order/order.interface";
+import { getTotalCharge } from "@utils/services/cart";
 
 const CART_DATA = {
   product: {
-    id: 0,
+    id: "",
     title: "",
     description: "",
     price: 0,
@@ -30,7 +33,7 @@ export interface ICartContext {
   cartData: ICart[];
   setCartData: any;
   addItem: any;
-  clear: any;
+  clearCart: any;
   removeItem: any;
   isInCart: any;
 }
@@ -54,24 +57,31 @@ const AppProviders: React.FC<CartProviderProps> = ({ children }) => {
     }
   };
 
-  const removeItem = (productId: number) => {
+  const removeItem = (productId: string) => {
     const productIndex = isInCart(productId);
     cartData.splice(productIndex, 1);
     setCartData([...cartData]);
   };
 
-  const clear = () => {
+  const clearCart = () => {
     setCartData([]);
   };
 
-  const isInCart = (id: number) => {
+  const isInCart = (id: string) => {
     const product = cartData.findIndex((prod) => prod.product.id === id);
     return product;
   };
 
   return (
     <CartContext.Provider
-      value={{ cartData, setCartData, addItem, clear, removeItem, isInCart }}
+      value={{
+        cartData,
+        setCartData,
+        addItem,
+        clearCart,
+        removeItem,
+        isInCart,
+      }}
     >
       {children}
     </CartContext.Provider>

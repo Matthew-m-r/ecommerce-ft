@@ -5,7 +5,7 @@ import "./home.styles.scss";
 
 const Home = () => {
   const { categoryId } = useParams();
-
+  
   return (
     <div className="main-home-container">
       <div className="filter-section">

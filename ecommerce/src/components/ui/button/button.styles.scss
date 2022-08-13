@@ -2,7 +2,9 @@
 
 .main-button-container {
     border-radius: $button-border-radius;
+    border: none;
     display: grid;
+    font-weight: bold;
     height: 30px;
     place-items: center;
     transition: all 0.32s ease-in-out;

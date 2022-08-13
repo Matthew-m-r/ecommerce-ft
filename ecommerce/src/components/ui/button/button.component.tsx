@@ -3,15 +3,25 @@ import "./button.styles.scss";
 
 interface ButtonProps {
   text: string;
+  type?: "button" | "submit" | "reset" | undefined;
   buttonStyle: string;
   onClick?: () => void;
 }
 
-const CustomButton = ({ text, buttonStyle, onClick }: ButtonProps) => {
+const CustomButton = ({
+  text,
+  type = "button",
+  buttonStyle,
+  onClick,
+}: ButtonProps) => {
   return (
-    <div className={`main-button-container ${buttonStyle}`} onClick={onClick}>
+    <button
+      type={type}
+      className={`main-button-container ${buttonStyle}`}
+      onClick={onClick}
+    >
       <p>{text}</p>
-    </div>
+    </button>
   );
 };
 

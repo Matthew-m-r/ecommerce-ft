@@ -1,32 +1,25 @@
 import CustomButton from "@components/ui/button/button.component";
-import DropDown from "@components/ui/button/dropdown/dropdown.component";
+import DropDown from "@components/ui/dropdown/dropdown.component";
 import { useCart } from "@context/cartContext";
-import { IProduct } from "@interfaces/product/product.interface";
-import { getProducts } from "@utils/services/product";
+import { IProduct, productInitialState } from "@interfaces/product/product.interface";
+import { getProductById } from "@utils/services/firestore";
 import React, { useEffect, useState } from "react";
-import { ReactEventHandler } from "react";
-import { EventHandler } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./itemDetail.styles.scss";
 
 const ItemDetail = () => {
-  const [product, setProduct] = useState<IProduct>();
+  const [product, setProduct] = useState<IProduct>(productInitialState);
   const options = { style: "currency", currency: "USD" };
   const priceFormat = new Intl.NumberFormat("en-US", options);
   const [productQuantity, setProductQuantity] = useState<number>(1);
+  const navigate = useNavigate();
   const cartContext = useCart();
-  const cartData = cartContext.cartData;
   const addProduct = cartContext.addItem;
-
   const { id } = useParams();
 
   useEffect(() => {
-    (async () => {
-      const response: IProduct[] = await getProducts;
-      if (id) {
-        setProduct(response.find((prod) => prod.id === parseInt(id)));
-      }
-    })();
+    const productId = id ? id.toString() : '';
+    getProductById(productId, setProduct);
   }, [id]);
 
   const hanldeDropDownChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -35,6 +28,11 @@ const ItemDetail = () => {
 
   const addToCart = () => {
     addProduct({ product, quantity: productQuantity });
+  };
+
+  const goToPurchase = () => {
+    addProduct({ product, quantity: productQuantity });
+    navigate("/cart");
   };
 
   return (
@@ -76,7 +74,11 @@ const ItemDetail = () => {
             buttonStyle="yellow"
             onClick={addToCart}
           />
-          <CustomButton text="Comprar ahora" buttonStyle="orange" />
+          <CustomButton
+            onClick={goToPurchase}
+            text="Comprar ahora"
+            buttonStyle="orange"
+          />
         </div>
       </div>
     </div>

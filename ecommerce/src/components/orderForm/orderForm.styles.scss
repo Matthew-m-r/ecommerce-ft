@@ -1,0 +1,86 @@
+@import "../../utils/styles/variables.scss";
+
+.main-order-form-container {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    padding: 0 0 1rem 0 0;
+    transition: max-height 0.15s ease-out;
+    width: 100%;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    > .client-billing-data {
+        margin: 1rem 0;
+        width: 70%;
+
+        > .billing-block {
+            display: flex;
+            font-weight: bold;
+            font-size: 0.7em;
+            flex-direction: column;
+            margin: 1rem 0;
+
+            input {
+                margin: 0.2rem 0 0 0;
+                padding: 0 0.5rem;
+            }
+
+            .error-message {
+                color: red;
+                font-size: 0.7rem;
+                font-weight: 100;
+                margin: 0 0.2rem;
+            }
+        }
+    }
+}
+
+.show-order-container {
+    min-height: 33rem;
+    transition: max-height 3s ease-in;
+}
+
+.order-created {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+
+    .confirmation-section {
+        align-items: center;
+        color: $green;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        svg {
+            height: 1.5rem;
+            margin: 0 !important;
+            width: 1.5rem;
+        }
+    }
+
+    .order-tracking-code {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem auto;
+        width: 50%;
+
+        p {
+            margin: 0;
+            text-align: center;
+        }
+        
+        > .main-button-container {
+            margin: 1.5rem 0 0 0 !important;
+            width: 50%;
+        }
+    }
+}

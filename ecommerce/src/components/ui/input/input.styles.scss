@@ -1,0 +1,8 @@
+@import "../../../utils/styles/variables.scss";
+
+.custom-input {
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    height: 37px;
+    outline-color: $input-outline;
+}

@@ -2,7 +2,7 @@ import { IProduct } from "@interfaces/product/product.interface";
 
 export const products: IProduct[] = [
   {
-    id: 0,
+    id: "0",
     title:
       "Royal Bobbles Better Call Saul Hector Salamanca Bobblehead con campana de trabajo, figura realista de poliresina premium, número de serie único, detalle exquisito",
     description:
@@ -15,7 +15,7 @@ export const products: IProduct[] = [
     stock: 3,
   },
   {
-    id: 1,
+    id: "1",
     title:
       "Apple MacBook Air 2020: chip Apple M1, pantalla Retina de 13 pulgadas, 8 GB de RAM, 256 GB de almacenamiento SSD, teclado retroiluminado, cámara FaceTime HD, Touch ID. Funciona con iPhone/iPad; plateado",
     description:
@@ -28,7 +28,7 @@ export const products: IProduct[] = [
     stock: 5,
   },
   {
-    id: 2,
+    id: "2",
     title:
       "Breaking Bad Los Pollos Hermanos - Camiseta con logotipo de retrato de espalda a espalda, Negro, S",
     description:
@@ -41,7 +41,7 @@ export const products: IProduct[] = [
     stock: 4,
   },
   {
-    id: 3,
+    id: "3",
     title:
       "Camiseta con leyenda en inglés «I Paused My Game to Be Here», divertida camiseta humorística para hombres o mujeres, humor para jugadores de videojuegos",
     description:
@@ -54,7 +54,7 @@ export const products: IProduct[] = [
     stock: 6,
   },
   {
-    id: 4,
+    id: "4",
     title:
       "Bedsure - Cama ortopédica para perros, para perros medianos, grandes o extragrandes, sofá de espuma con funda extraíble y lavable, con forro impermeable y base antideslizante",
     description:
@@ -67,7 +67,7 @@ export const products: IProduct[] = [
     stock: 7,
   },
   {
-    id: 5,
+    id: "5",
     title: "NordicTrack Dumbbells",
     description:
       "Entrenamientos de fuerza dirigidos por entrenador: descarga la aplicación iFit para comenzar tu prueba gratuita; descubre miles de entrenamientos de video dirigidos por entrenador en tu propia tableta o smartphone; cancela en cualquier momento, no requiere compromiso",
@@ -79,7 +79,7 @@ export const products: IProduct[] = [
     stock: 5,
   },
   {
-    id: 6,
+    id: "6",
     title: "Royal Bobbles Breaking Bad Walter White Bobblehead",
     description:
       "Rompiendo malas cabezas: Walter White, genio de la química convertido en profesor de ciencia convertido en narcotraficante regresa como un bobblehead coleccionable. Este Breaking Bad Walter White Bobblehead cuenta con la mente maestra como su alter ego, Heisenberg completo con sombrero en la mano y de pie en una escena del desierto.",
@@ -91,7 +91,7 @@ export const products: IProduct[] = [
     stock: 4,
   },
   {
-    id: 7,
+    id: "3MxyqZCRW3ALPhvqX1kH",
     title:
       "MSI Katana GF66 15.6 144Hz 3ms FHD Gaming Laptop Intel Core i7-11800H RTX3050TI 16GB 1TBNVMe SSD Win10",
     description:

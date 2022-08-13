@@ -11,8 +11,6 @@ const NotFound = () => {
 
   useEffect(() => {
       (async () => {
-        console.log("This Shit has been called!");
-
         while (!dogAwake) {
           newDog = getNewDog();
           dogAwake = await getAwakeDog(newDog);
