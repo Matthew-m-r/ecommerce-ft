@@ -1,6 +1,7 @@
 import CartResume from "@components/cartResume/cartResume.component";
 import OrderForm from "@components/orderForm/orderForm.component";
 import SubTotalCartItems from "@components/subtotalCartItems/subtotalCartItems.component";
+import CustomButton from "@components/ui/button/button.component";
 import DropDown from "@components/ui/dropdown/dropdown.component";
 import { useCart } from "@context/cartContext";
 import { ICart } from "@interfaces/cart/cart.interface";
@@ -143,14 +144,14 @@ const CartList = () => {
 
         {showForm ? (
           <div className="cart-list-description-container main-order-container">
-            <OrderForm showForm={showForm} />
+            <OrderForm showForm={showForm} setShowForm={setShowForm} />
           </div>
         ) : null}
       </div>
 
       {cartProducts.length !== 0 ? (
         <div className="cart-list-order-container">
-          <CartResume showForm={setShowForm} />
+          <CartResume showForm={setShowForm} formVisible={!showForm} />
         </div>
       ) : null}
     </div>

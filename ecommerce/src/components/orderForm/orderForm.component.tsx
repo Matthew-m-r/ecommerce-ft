@@ -8,7 +8,7 @@ import {
 } from "@interfaces/form/form.interface";
 import { defaultValidation, emailValidation } from "@utils/services/form";
 import { createOrder } from "@utils/services/order";
-import React, { useEffect, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { formData } from "./form.data";
@@ -16,9 +16,10 @@ import "./orderForm.styles.scss";
 
 interface OrderFormProps {
   showForm: Boolean;
+  setShowForm: Dispatch<SetStateAction<Boolean>>
 }
 
-const OrderForm = ({ showForm }: OrderFormProps) => {
+const OrderForm = ({ showForm, setShowForm }: OrderFormProps) => {
   const [form, setForm] = useState<IForm>(initialFormState);
   const [formError, setFormError] = useState<IForm>(initialFormErrorState);
   const [orderCode, setOrderCode] = useState<string>("");
@@ -82,6 +83,11 @@ const OrderForm = ({ showForm }: OrderFormProps) => {
           text="Finalizar compra"
           buttonStyle="yellow"
           type="submit"
+        />
+         <CustomButton
+          text="Ir al Carrito"
+          buttonStyle="default"
+          onClick={() => setShowForm(false)}
         />
       </div>
     </form>

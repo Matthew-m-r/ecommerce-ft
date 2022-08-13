@@ -3,11 +3,11 @@
 .main-button-container {
     border-radius: $button-border-radius;
     border: none;
+    color: #0F1111;
     display: grid;
     font-weight: bold;
     height: 30px;
     place-items: center;
-    transition: all 0.32s ease-in-out;
     width: 100%;
 
     p {
@@ -17,15 +17,43 @@
     }
 
     &:hover {
-        box-shadow: 0 0.2em 0.2em 0 rgb(77, 77, 77, 0.4);
+        box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
         cursor: pointer;
     }
 }
 
 .yellow {
     background-color: $yellow-button;
+    border-color: #FCD200;
+
+    &:hover {
+        background: $yellow-hover-button;
+        border-color: #f2c200;
+        box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+        cursor: pointer;
+    }
 }
 
 .orange {
     background-color: $orange-button;
+    border-color: #FF8F00;
+
+    &:hover {
+        background: $orange-hover-button;
+        border-color: #E3931E;
+        box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+        cursor: pointer;
+    }
+}
+
+.default {
+    background-color: #FFF;
+    border-color: #D5D9D9;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    margin: 1rem 0;
+
+    &:hover {
+        background: #F7FAFA;
+        cursor: pointer;
+    }
 }

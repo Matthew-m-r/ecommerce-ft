@@ -6,10 +6,11 @@ import "./cartResume.styles.scss";
 
 interface CartResumeProps {
   freeShipping?: Boolean;
-  showForm: Dispatch<SetStateAction<Boolean>>
+  showForm: Dispatch<SetStateAction<Boolean>>;
+  formVisible: Boolean;
 }
 
-const CartResume = ({ freeShipping = true, showForm }: CartResumeProps) => {
+const CartResume = ({ freeShipping = true, showForm, formVisible }: CartResumeProps) => {
   return (
     <div className="cart-resume-main-container">
       <div className="shipping-details-container">
@@ -21,13 +22,15 @@ const CartResume = ({ freeShipping = true, showForm }: CartResumeProps) => {
       <div className="subtotal-section">
         <SubTotalCartItems />
       </div>
-      <div className="order-section">
-        <CustomButton
-          text="Proceder al pago"
-          buttonStyle="yellow"
-          onClick={() => showForm(true)}
-        />
-      </div>
+      {formVisible ? (
+        <div className="order-section">
+          <CustomButton
+            text="Proceder al pago"
+            buttonStyle="yellow"
+            onClick={() => showForm(true)}
+          />
+        </div>
+      ) : null}
     </div>
   );
 };
