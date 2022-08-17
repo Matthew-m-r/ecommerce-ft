@@ -2,56 +2,88 @@
 
 .main-navbar-container {
   align-items: center;
-  background-color: $secondary-blue;
   display: flex;
-  height: 3rem;
+  height: 7rem;
   width: 100%;
 
   @media (max-width: $mobileL) {
     .navbar {
       justify-content: flex-end !important;
 
-      .left-side {
+      .nav-left {
         display: none !important;
       }
-      .right-side {
+      .nav-right {
         align-self: flex-end;
       }
     }
   }
 
   > .navbar {
-    align-items: center;
-    color: white;
-    display: flex;
-    font-size: 0.8rem;
-    font-weight: 500;
-    justify-content: space-between;
-    margin: 0 2rem;
+    height: 100%;
     width: 100%;
 
-    .nav-link {
-      border: 1px solid transparent;
-      color: white !important;
-      font-weight: bold;
-      padding: 0.2rem 1rem;
-      text-decoration: none;
+    > .nav-top-container {
+      align-items: center;
+      background: $dark-blue;
+      color: white;
+      display: flex;
+      font-size: 0.8rem;
+      font-weight: 500;
+      height: 60%;
+      width: 100%;
 
-      &:hover {
-        border: 1px solid white;
-        cursor: pointer;
+      > .nav-left {
+        width: 10%;
+      }
+
+      > .nav-fill {
+        width: 40%;
+      }
+
+      > .nav-right {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 1rem 0 0;
+        width: 50%;
       }
     }
 
-    .cart-link {
-      border: 1px solid transparent;
-      color: white !important;
-      padding: 0.2rem 1rem;
-      text-decoration: none;
-    }
-
-    .left-side {
+    > .nav-bottom-container {
+      align-items: center;
+      background-color: $secondary-blue;
+      color: white;
       display: flex;
+      font-size: 0.8rem;
+      font-weight: 500;
+      height: 40%;
+      justify-content: space-between;
+      padding: 0 0 0 1rem;
+      width: 100%;
+
+      .nav-link {
+        border: 1px solid transparent;
+        color: white !important;
+        font-weight: bold;
+        padding: 0.2rem 1rem;
+        text-decoration: none;
+
+        &:hover {
+          border: 1px solid white;
+          cursor: pointer;
+        }
+      }
+
+      .cart-link {
+        border: 1px solid transparent;
+        color: white !important;
+        padding: 0.2rem 1rem;
+        text-decoration: none;
+      }
+
+      .nav-left {
+        display: flex;
+      }
     }
   }
 }

@@ -3,8 +3,7 @@
     border: 1px solid transparent;
     cursor: pointer;
     display: flex;
-    margin: 0 2rem;
-    padding: 0.4rem;
+    margin: 0 1rem;
 
     &:hover {
         border: 1px solid white;
@@ -12,6 +11,6 @@
     }
 
     > img {
-        max-width: 5rem;
+        max-width: 6rem;
     }
 }

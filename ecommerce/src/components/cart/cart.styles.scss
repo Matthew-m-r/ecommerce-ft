@@ -22,3 +22,21 @@
         width: 40px;
     }
 }
+
+.product-added-animation {
+    animation: ease-in-out 1s addToCartAnim;
+}
+
+@keyframes addToCartAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
